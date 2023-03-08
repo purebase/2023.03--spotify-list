@@ -23,7 +23,7 @@ export default function GetAlbums() {
       }
     );
     let data = await response.json();
-    setAlbums(data.items);
+    setAlbums(data.albums.items);
   };
   return (
     <div className="flex flex-col gap-10  p-5 justify-center items-center mx-auto">
