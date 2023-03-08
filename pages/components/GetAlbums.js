@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AlbumContext } from "../context/albumContext";
 
-export function GetAlbums() {
+export default function GetAlbums() {
   const [artist, setArtist] = useState("");
   const { setAlbums } = useContext(AlbumContext);
 

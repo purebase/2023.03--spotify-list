@@ -1,8 +1,8 @@
 import type {NextPage} from "next";
 import List from "./components/List";
 import AlbumProvider from "./context/albumContext";
-import {GetAlbums} from "./components/GetAlbums";
-import {GetMePlaylists} from "./components/GetMePlaylists";
+import GetAlbums from "./components/GetAlbums";
+import GetMePlaylists from "./components/GetMePlaylists";
 
 const Home: NextPage = () => {
     return (

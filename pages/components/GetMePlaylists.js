@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AlbumContext } from "../context/albumContext";
 
-export function GetMePlaylists() {
+export default function GetMePlaylists() {
 
   let GetMePlaylists = async () => {
     let tokenres = await fetch("/api/spotify?token=true", {
