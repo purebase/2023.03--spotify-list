@@ -11,6 +11,8 @@ export default function GetAlbums() {
     });
 
     let tokenResponse = await tokenres.json();
+    console.log("BEARER " + tokenResponse.res.access_token);
+
 
       // https://developer.spotify.com/console/search
     let response = await fetch(

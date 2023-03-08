@@ -9,6 +9,7 @@ export default function GetMePlaylists() {
     });
 
     let tokenResponse = await tokenres.json();
+    console.log("BEARER " + tokenResponse.res.access_token);
 
       // https://developer.spotify.com/console/get-current-user-playlists
     let response = await fetch(
